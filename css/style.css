@@ -1,11 +1,120 @@
+/*Global*/
 
-/* .gradient-custom { */
-    /* fallback for old browsers */
-    /* background: #6a11cb; */
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)); */
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)) */
-  /* } */
+.login-row {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.page-login {
+  padding: 0;
+}
+
+/*Hero Image*/
+.img-col {
+  padding: 0;
+  background-image: url("../images/Hero.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.hero {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*Login Bar*/
+
+h1 {
+  color: white;
+}
+
+.body-sm {
+  font: 12px "Helvetica" sans-serif;
+  color: white;
+}
+
+.link-text {
+  font: 12px "Helvetica" sans-serif;
+  color: #0086cf;
+  font-weight: bold;
+}
+
+.body-sm-label {
+  color: white;
+  font: 12px "Helvetica" sans-serif;
+  font-weight: bold;
+}
+
+label {
+  color: white;
+  font: 12px "Helvetica" sans-serif;
+  font-weight: bold;
+}
+
+.custom-control-label:before{
+  background-color:black;
+  border: 2px solid #0086cf;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:black;
+  border: 2px solid #0086cf;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='lightblue' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  border: 2px solid #0086cf;
+}
+.custom-control-input:active~.custom-control-label::before{
+  background-color:black;
+  border: 2px solid #0086cf;
+}
+
+.btn-login {
+  background-color: #0086cf;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  font: 12px "Helvetica" sans-serif;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid white;
+  width: 175px;
+}
+
+.btn-google {
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  font: 12px "Helvetica" sans-serif;
+  font-weight: bold;
+}
+
+.icon-google {
+  height: 21px;
+}
+
+@media only screen and (max-width: 1200px) {
+.login-body {
+  background-color: black !important;
+  height: 100%
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .img-col {
+    padding: 0;
+    background-image: url("../images/Hero.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-height: 400px;
+    width: auto;
+  }
+}

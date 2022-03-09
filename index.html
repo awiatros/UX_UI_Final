@@ -11,45 +11,50 @@
     <title>The Depot | Login</title>
   </head>
   <body>
-<!-- Top Logo -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-        The Depot
-      </a>
-    </nav>
-<!-- Login Box-->
-    </section>
-    <section class="vh-100 gradient-custom">
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <h2 class="fw-bold mb-2 text-uppercase">Welcome Back</h2>
-            <!-- <p class="text-black-50 mb-5">Please enter your login and password!</p> -->
-
-            <div class="card bg-white" style="border-radius: 1rem;">
-              <div class="card-body p-5">
-    
-                <div class="mb-md-4 mt-md-4">
-        
-                  <div class="form-outline form-white mb-4">
-                    <label class="form-label" for="typeEmailX">Email</label>
-                    <input type="email" id="typeEmailX" class="form-control form-control-lg" />
-                  </div>
-    
-                  <div class="form-outline form-black mb-4">
-                    <label class="form-label" for="typePasswordX">Password</label>
-                    <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                  </div>
-    
-                  <p class="small mb-5 pb-lg-2 text-right"><a class="text-black-50" href="#!">Forgot password?</a></p>
-                  
-                  <div class="text-right">
-                    <button class="btn btn-outline-dark btn-lg px-5" type="submit">Login</button>
-                  </div>
-                </div>    
+    <section class="container-fluid page-login">
+      <div class="container-fluid login-body">
+        <!--Hero Image-->
+        <div class="row login-row">
+          <div class="col-xl-7 col-l-7 col-m-12 col-sm-12 img-col">
+          </div>
+        <!--Login-->
+          <div class="col-xl-5 col-l-5 col-m-12 col-sm-12 d-flex justify-content-between align-self-center login-col">
+            <div class="login mx-auto my-5">
+              <h1 class="fw-bold mb-2">Welcome back</h1>
+              <p class="body-sm pb-4" >Login and get onboard to begin your education journey!</p>
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="typeEmailX">Email address</label>
+                <input type="email" id="typeEmailX" class="form-control form-control" placeholder="Enter your email" />
               </div>
-            </div>
+              <div class="form-outline form-black mb-2">
+                <label class="form-label" for="typePasswordX">Password</label>
+                <input type="password" id="typePasswordX" class="form-control form-control" placeholder="Enter your password" />
+              </div>
+              <div class="row d-flex justify-content-between">
+                <form>
+                  <div class="custom-control custom-checkbox ml-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">Remember Password</label>
+                  </div>
+                </form>
+                <p class="body-sm pb-3"><a class="body-sm mr-3" href="#!">Forgot password?</a></p>
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-outline-dark btn-login align-self-center" type="submit">Login</button>
+              </div>
+              <div class="row mt-2 mb-4">
+                <p class="body-sm-label ml-5">Don't have an account?</p>
+                <a href="" class="link-text pl-2">Sign up</a>
+              </div>
+              <div class="row">
+                <hr>
+                <p class="body-sm-label">or</p>
+                <hr>
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-outline-dark btn-google align-self-center" type="submit"><img src="images/icon-google.png" class="icon-google" alt="multi-colored google letter G icon"> Continue with Google</button>
+              </div>
+            </div>    
           </div>
         </div>
       </div>
